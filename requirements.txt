@@ -1,12 +1,13 @@
 in this project i have used these libraries
 
-pandas
+Python 3.x
+yfinance
+pandas 
 numpy
-matplotlib.pyplot
+matplotlib
 seaborn
 statsmodels
-adf 
-kpss
+prophet
 ARIMA
 SARIMA
-Prohphet
+scikit-learn
