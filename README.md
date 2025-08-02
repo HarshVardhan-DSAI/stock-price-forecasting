@@ -1,4 +1,4 @@
-# 📈 Stock Price Forecasting using Time Series Models
+#  Stock Price Forecasting using Time Series Models
 
 Forecasting stock prices using historical data and time series modeling techniques to aid investment decisions and trend analysis.
 
