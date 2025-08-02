@@ -5,5 +5,8 @@ numpy
 matplotlib.pyplot
 seaborn
 statsmodels
-adf and kpss
-ARIMA, SARIMA, Prohphet
+adf 
+kpss
+ARIMA
+SARIMA
+Prohphet
