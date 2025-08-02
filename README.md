@@ -1,70 +1,61 @@
-Stock Price Forecasting Using Time Series Analysis
-Project Goal
-To forecast future stock prices using historical data and advanced time series models, helping investors and analysts make informed decisions based on data-driven predictions.
+# 📈 Stock Price Forecasting using Time Series Models
 
-Dataset
-We use historical stock price data (e.g., Apple Inc. - AAPL), downloaded directly from Yahoo Finance. The dataset includes daily closing prices over multiple years.
+Forecasting stock prices using historical data and time series modeling techniques to aid investment decisions and trend analysis.
 
-Date	Close Price (USD)
-2013-01-02	16.65
-2013-01-03	16.44
-2013-01-04	15.98
-2013-01-07	15.89
-2013-01-08	15.93
-...	...
-Method
-Downloaded historical stock prices using yfinance.
+---
 
-Performed exploratory data analysis and visualizations.
+## **Project Goal**
 
-Conducted stationarity tests (ADF and KPSS) to understand data properties.
+To develop a forecasting pipeline using historical stock data and time series models to:
+- Understand stock trends and seasonality
+- Compare model accuracy
+- Provide future price projections via an interactive dashboard
 
-Decomposed the series to analyze trend and seasonality.
+---
 
-Applied statistical models:
+## **Dataset**
 
-ARIMA for univariate forecasting
+Historical daily stock data for **Apple Inc. (AAPL)** from **2013 to 2023**, retrieved using the `yfinance` API.
 
-SARIMA to incorporate seasonal components
+| Date       | Open   | High   | Low    | Close  | Volume    |
+|------------|--------|--------|--------|--------|-----------|
+| 2013-01-02 | 79.38  | 79.57  | 78.18  | 78.43  | 140129500 |
+| 2013-01-03 | 78.98  | 79.25  | 77.72  | 78.18  | 113432900 |
+| ...        | ...    | ...    | ...    | ...    | ...       |
 
-Applied ML-based forecasting with Prophet to capture complex seasonal patterns.
+*(Source: Yahoo Finance via `yfinance` Python package)*
 
-Evaluated models using metrics like RMSE and MAPE.
+---
 
-Plotted AutoCorrelation and Partial AutoCorrelation functions to select model parameters.
+## **Method**
 
-Results
-Successfully identified patterns and seasonality in stock price data.
+- Data acquisition with `yfinance`
+- Preprocessing and checking stationarity
+- Time series decomposition
+- Model building using:
+  - **ARIMA**
+  - **SARIMA**
+  - **Prophet**
+- Performance comparison using RMSE and MAPE
+- Built and deployed an interactive **Streamlit** app for visualization
 
-Generated accurate forecasts using multiple models, visually comparing predicted vs actual values.
+---
 
-Provided metrics demonstrating model accuracy and reliability.
+## **Results**
 
-How to Run
-Clone the repository:
+- **SARIMA** model outperformed others:
+  - **MAPE**: 4.57%
+  - **RMSE**: 9.81
+- The Streamlit dashboard allows:
+  - Model comparison
+  - Forecast exploration
+  - Custom simulation of future price scenarios
 
-bash
-git clone https://github.com/your-username/stock-price-forecasting.git
-Install required Python packages:
+---
 
-bash
-pip install -r requirements.txt
-Open the notebook:
+## **How to Run**
 
-bash
-jupyter notebook Stock-price-forecasting.ipynb
-Run each cell to reproduce the full analysis. Change the stock ticker as desired.
-
-Libraries Used
-yfinance for financial data download
-
-pandas, numpy for data handling
-
-matplotlib, seaborn for visualization
-
-statsmodels for statistical tests and ARIMA/SARIMA models
-
-prophet for ML time series forecasting
-
-scikit-learn for evaluation metrics
-
+1. Clone the repository:
+```bash
+git clone https://github.com/HarshVardhan-DSAI/stock-price-forecasting.git
+cd stock-price-forecasting
