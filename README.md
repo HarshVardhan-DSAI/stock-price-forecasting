@@ -9,7 +9,7 @@ Forecasting stock prices using historical data and time series modeling techniqu
 To develop a forecasting pipeline using historical stock data and time series models to:
 - Understand stock trends and seasonality
 - Compare model accuracy
-- Provide future price projections via an interactive dashboard
+- Provide future price projections via an interactive streamlit
 
 ---
 
