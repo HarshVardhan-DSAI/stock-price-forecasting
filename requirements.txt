@@ -1,0 +1,7 @@
+In this project i have used these libraries
+
+pandas
+numpy
+matplotlib.pyplot
+seaborn
+stats
