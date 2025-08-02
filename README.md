@@ -49,7 +49,6 @@ Historical daily stock data for **Apple Inc. (AAPL)** from **2013 to 2023**, ret
 - The Streamlit dashboard allows:
   - Model comparison
   - Forecast exploration
-  - Custom simulation of future price scenarios
 
 ---
 
