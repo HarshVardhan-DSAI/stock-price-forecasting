@@ -1,42 +1,70 @@
-Stock Price Forecasting with Time Series Analysis
-Overview
-This project demonstrates how to forecast stock prices using advanced time series techniques. It combines classical statistical models and modern machine learning approaches to analyze and predict stock market behavior using historical data.
+Stock Price Forecasting Using Time Series Analysis
+Project Goal
+To forecast future stock prices using historical data and advanced time series models, helping investors and analysts make informed decisions based on data-driven predictions.
 
-Features
-Download stock data from Yahoo Finance using yfinance.
+Dataset
+We use historical stock price data (e.g., Apple Inc. - AAPL), downloaded directly from Yahoo Finance. The dataset includes daily closing prices over multiple years.
 
-Perform exploratory data analysis and visualize trends.
+Date	Close Price (USD)
+2013-01-02	16.65
+2013-01-03	16.44
+2013-01-04	15.98
+2013-01-07	15.89
+2013-01-08	15.93
+...	...
+Method
+Downloaded historical stock prices using yfinance.
 
-Test stationarity of the time series using Augmented Dickey-Fuller (ADF) and KPSS tests.
+Performed exploratory data analysis and visualizations.
 
-Decompose time series into trend, seasonal, and residual components.
+Conducted stationarity tests (ADF and KPSS) to understand data properties.
 
-Build forecasting models using ARIMA, SARIMA, and Prophet.
+Decomposed the series to analyze trend and seasonality.
 
-Evaluate model performance with Mean Squared Error (MSE) and Mean Absolute Percentage Error (MAPE).
+Applied statistical models:
 
-Visualize auto-correlation and partial auto-correlation for parameter tuning.
+ARIMA for univariate forecasting
 
-Clean and well-documented code in a Jupyter notebook.
+SARIMA to incorporate seasonal components
 
-Project Structure
-Stock-price-forecasting.ipynb — Jupyter notebook containing the complete data analysis and modeling workflow.
+Applied ML-based forecasting with Prophet to capture complex seasonal patterns.
 
-README.md — Project description and usage instructions.
+Evaluated models using metrics like RMSE and MAPE.
 
-Technologies & Libraries
-Python 3.x
+Plotted AutoCorrelation and Partial AutoCorrelation functions to select model parameters.
 
-yfinance
+Results
+Successfully identified patterns and seasonality in stock price data.
 
-pandas, numpy
+Generated accurate forecasts using multiple models, visually comparing predicted vs actual values.
 
-matplotlib, seaborn
+Provided metrics demonstrating model accuracy and reliability.
 
-statsmodels
+How to Run
+Clone the repository:
 
-prophet
+bash
+git clone https://github.com/your-username/stock-price-forecasting.git
+Install required Python packages:
 
-scikit-learn
+bash
+pip install -r requirements.txt
+Open the notebook:
 
-How to Use
+bash
+jupyter notebook Stock-price-forecasting.ipynb
+Run each cell to reproduce the full analysis. Change the stock ticker as desired.
+
+Libraries Used
+yfinance for financial data download
+
+pandas, numpy for data handling
+
+matplotlib, seaborn for visualization
+
+statsmodels for statistical tests and ARIMA/SARIMA models
+
+prophet for ML time series forecasting
+
+scikit-learn for evaluation metrics
+
