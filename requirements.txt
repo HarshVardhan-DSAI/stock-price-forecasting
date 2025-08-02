@@ -4,4 +4,4 @@ pandas
 numpy
 matplotlib.pyplot
 seaborn
-stats
+statsmodels
